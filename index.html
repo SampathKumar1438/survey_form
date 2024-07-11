@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <img src="thunder.png" alt="logo" height="200px" >
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" placeholder="First Name">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" placeholder="Last Name">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <p><strong>How do you rate our customer support?</strong></p>
+        <div class="rating">
+            <label><input type="radio" name="support-rating" value="1"> 1</label>
+            <label><input type="radio" name="support-rating" value="2"> 2</label>
+            <label><input type="radio" name="support-rating" value="3"> 3</label>
+            <label><input type="radio" name="support-rating" value="4"> 4</label>
+            <label><input type="radio" name="support-rating" value="5"> 5</label>
+        </div>
+        <p><strong>How was our representative? (Check all that apply)</strong></p>
+        <div class="checkbox-group">
+            <label><input type="checkbox" value="professional"> Professional</label>
+            <label><input type="checkbox" value="patient"> Patient</label>
+            <label><input type="checkbox" value="friendly"> Friendly</label>
+            <label><input type="checkbox" value="supportive"> Supportive</label>
+            <label><input type="checkbox" value="clear"> Clear and direct</label>
+            <label><input type="checkbox" value="helpful"> Helpful and kind</label>
+        </div>
+        <button type="submit" onclick="alert">Submit Feedback</button>
+    </form>
+    <script src="script.js" ></script>
+</body>
+</body>
+</html>
